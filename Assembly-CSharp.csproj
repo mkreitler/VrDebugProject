@@ -219,6 +219,7 @@
     <Compile Include="Assets\Scripts\Assert.cs" />
     <Compile Include="Assets\Scripts\DebugSphere.cs" />
     <Compile Include="Assets\Scripts\DebugText.cs" />
+    <Compile Include="Assets\Scripts\ExtraInputHandler.cs" />
     <Compile Include="Assets\Scripts\PlayerLadder.cs" />
     <Compile Include="Assets\Scripts\Switchboard.cs" />
     <Compile Include="Assets\Scripts\TestVolume.cs" />

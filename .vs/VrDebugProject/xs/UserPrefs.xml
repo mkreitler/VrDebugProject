@@ -1,7 +1,9 @@
 ﻿<Properties StartupConfiguration="{DB02ED4D-0696-CF01-BD36-21801353DB12}|">
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Oculus/SampleFramework/Editor/OculusSampleFrameworkUtil.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/ExtraInputHandler.cs">
     <Files>
       <File FileName="Assets/Oculus/SampleFramework/Editor/OculusSampleFrameworkUtil.cs" Line="43" Column="1" />
+      <File FileName="Assets/Scripts/ExtraInputHandler.cs" Line="12" Column="1" />
+      <File FileName="Assets/Scripts/DebugText.cs" Line="13" Column="1" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
@@ -10,10 +12,19 @@
             <Node name="Assets" expanded="True">
               <Node name="Oculus" expanded="True">
                 <Node name="SampleFramework" expanded="True">
-                  <Node name="Editor" expanded="True">
-                    <Node name="OculusSampleFrameworkUtil.cs" selected="True" />
+                  <Node name="Core" expanded="True">
+                    <Node name="CustomHands" expanded="True">
+                      <Node name="Scripts" expanded="True" />
+                    </Node>
+                    <Node name="DistanceGrab" expanded="True">
+                      <Node name="Scripts" expanded="True" />
+                    </Node>
                   </Node>
+                  <Node name="Editor" expanded="True" />
                 </Node>
+              </Node>
+              <Node name="Scripts" expanded="True">
+                <Node name="ExtraInputHandler.cs" selected="True" />
               </Node>
             </Node>
           </Node>
@@ -23,7 +34,7 @@
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="034fb99b-6f9c-4dd6-a9aa-ca7555847b03" />
+  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="6c2fb3db-7176-4e12-bbbc-f28d39b01d1a" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
