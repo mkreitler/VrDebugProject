@@ -33,7 +33,7 @@ public class ExtraInputHandler : MonoBehaviour
         Assert.Test(textMesh != null, "No text mesh defined!");
         Assert.Test(playerController != null, "No player controller defined!");
         Assert.Test(goPlayer != null, "No player game object defined!");
-        Assert.Test(ladderHeight > 0.0f, "Ladder height must be greater than 0!")
+        Assert.Test(ladderHeight > 0.0f, "Ladder height must be greater than 0!");
     }
 
     private void FixedUpdate() {

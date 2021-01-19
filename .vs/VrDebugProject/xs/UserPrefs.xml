@@ -2,7 +2,7 @@
   <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/ExtraInputHandler.cs">
     <Files>
       <File FileName="Assets/Oculus/SampleFramework/Editor/OculusSampleFrameworkUtil.cs" Line="43" Column="1" />
-      <File FileName="Assets/Scripts/ExtraInputHandler.cs" Line="12" Column="1" />
+      <File FileName="Assets/Scripts/ExtraInputHandler.cs" Line="36" Column="83" />
       <File FileName="Assets/Scripts/DebugText.cs" Line="13" Column="1" />
     </Files>
     <Pads>
