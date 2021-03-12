@@ -17,31 +17,34 @@ namespace PalletBuilder {
 
         private Material material;
 
-        [SerializeField]
-        private Renderer renderer;
+        private Renderer localRenderer = null;
 
         private List<Collider> overlaps = new List<Collider>();
 
+        private bool initialized = false;
+
         // Start is called before the first frame update
         void Start() {
-            OldOverlaps = 0;
-            Overlaps = 0;
+            if (!initialized) {
+                Init();
+            }
+        }
 
-            if (renderer == null) {
-                renderer = gameObject.GetComponent<Renderer>();
+        void OnEnable() {
+            if (!initialized) {
+                Init();
             }
 
-            Assert.Test(renderer != null, "No tester renderer defined!");
-
-            material = renderer.materials[0];
-            renderer.enabled = false;
-
-            Assert.Test(material != null, "No tester material defined!");
+            OldOverlaps = 0;
+            Overlaps = 0;
         }
 
         // Update is called once per frame
         void Update() {
-            if (OVRInput.Get(OVRInput.Button.One) || OVRInput.Get(OVRInput.Button.Three)) {
+            if (OVRInput.Get(OVRInput.Button.One) ||
+                OVRInput.Get(OVRInput.Button.Three) ||
+                OVRInput.Get(OVRInput.Button.PrimaryIndexTrigger) ||
+                OVRInput.Get(OVRInput.Button.SecondaryIndexTrigger)) {
                 Color color = material.color;
                 if (Overlaps > 0) {
                     color.r = 1.0f;
@@ -55,11 +58,10 @@ namespace PalletBuilder {
                 }
 
                 material.color = color;
-                renderer.enabled = true;
-                Switchboard.Broadcast("SetText", "Overlaps: " + Overlaps);
+                localRenderer.enabled = true;
             }
             else {
-                renderer.enabled = false;
+                localRenderer.enabled = false;
             }
         }
 
@@ -68,7 +70,6 @@ namespace PalletBuilder {
                 Overlaps += 1;
                 overlaps.Add(other);
             }
-
         }
 
         private void OnTriggerExit(Collider other) {
@@ -76,6 +77,21 @@ namespace PalletBuilder {
                 overlaps.Remove(other);
                 Overlaps -= 1;
             }
+        }
+
+        private void Init() {
+            if (localRenderer == null) {
+                localRenderer = gameObject.GetComponent<Renderer>();
+            }
+
+            Assert.Test(localRenderer != null, "No tester localRenderer defined!");
+
+            material = localRenderer.materials[0];
+            localRenderer.enabled = false;
+
+            Assert.Test(material != null, "No tester material defined!");
+
+            initialized = true;
         }
     }
 }

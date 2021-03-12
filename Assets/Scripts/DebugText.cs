@@ -17,7 +17,6 @@ namespace PalletBuilder
         }
 
         private void Start() {
-            Switchboard.Broadcast("SetText", "Debug started...");
         }
 
         // Update is called once per frame

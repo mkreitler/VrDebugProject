@@ -1,31 +1,20 @@
 ﻿<Properties StartupConfiguration="{DB02ED4D-0696-CF01-BD36-21801353DB12}|">
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/ExtraInputHandler.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/ScenarioManager.cs">
     <Files>
-      <File FileName="Assets/Oculus/SampleFramework/Editor/OculusSampleFrameworkUtil.cs" Line="43" Column="1" />
-      <File FileName="Assets/Scripts/ExtraInputHandler.cs" Line="36" Column="83" />
-      <File FileName="Assets/Scripts/DebugText.cs" Line="13" Column="1" />
+      <File FileName="Assets/Scripts/ExtraInputHandler.cs" Line="22" Column="23" />
+      <File FileName="Assets/Scripts/DebugText.cs" />
+      <File FileName="Assets/Scripts/ScenarioData.cs" />
+      <File FileName="Assets/Scripts/Cargo.cs" />
+      <File FileName="Assets/Scripts/TestVolume.cs" />
+      <File FileName="Assets/Scripts/Pallet.cs" />
+      <File FileName="Assets/Scripts/ScenarioManager.cs" Line="47" Column="31" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="VrDebugProject" expanded="True">
-            <Node name="Assets" expanded="True">
-              <Node name="Oculus" expanded="True">
-                <Node name="SampleFramework" expanded="True">
-                  <Node name="Core" expanded="True">
-                    <Node name="CustomHands" expanded="True">
-                      <Node name="Scripts" expanded="True" />
-                    </Node>
-                    <Node name="DistanceGrab" expanded="True">
-                      <Node name="Scripts" expanded="True" />
-                    </Node>
-                  </Node>
-                  <Node name="Editor" expanded="True" />
-                </Node>
-              </Node>
-              <Node name="Scripts" expanded="True">
-                <Node name="ExtraInputHandler.cs" selected="True" />
-              </Node>
+            <Node name="Assets" expanded="True" selected="True">
+              <Node name="Scripts" expanded="True" />
             </Node>
           </Node>
         </State>
@@ -34,9 +23,11 @@
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="6c2fb3db-7176-4e12-bbbc-f28d39b01d1a" />
+  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="4521547c-2244-4dc8-9a91-b2f5fecb4935" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
-    <BreakpointStore />
+    <BreakpointStore>
+      <FunctionBreakpoint line="71" column="39" function="testCrushErrors" language="C#" />
+    </BreakpointStore>
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MultiItemStartupConfigurations />
 </Properties>

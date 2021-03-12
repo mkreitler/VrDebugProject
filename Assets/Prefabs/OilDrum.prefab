@@ -11,8 +11,9 @@ GameObject:
   - component: {fileID: 1712093644041345012}
   - component: {fileID: 3070650345308306636}
   - component: {fileID: 6226516999580849014}
-  - component: {fileID: 8686842061186916693}
   - component: {fileID: 8232875045060827174}
+  - component: {fileID: 6687481357533253174}
+  - component: {fileID: 7780810917267233470}
   m_Layer: 9
   m_Name: OilDrum
   m_TagString: Untagged
@@ -27,9 +28,9 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4848497251612686288}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.63829476, y: 0.9693619, z: -5.867058}
-  m_LocalScale: {x: 0.5, y: 0.375, z: 0.5}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 0, y: 0, z: 0}
   m_Children:
   - {fileID: 7101629845942025383}
   m_Father: {fileID: 0}
@@ -80,20 +81,6 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
---- !u!136 &8686842061186916693
-CapsuleCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4848497251612686288}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  m_Radius: 0.5000001
-  m_Height: 2
-  m_Direction: 1
-  m_Center: {x: 0.000000059604645, y: 0, z: -0.00000008940697}
 --- !u!54 &8232875045060827174
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -110,6 +97,36 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!64 &6687481357533253174
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4848497251612686288}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Convex: 1
+  m_CookingOptions: 14
+  m_Mesh: {fileID: 10206, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &7780810917267233470
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4848497251612686288}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0307ba91f065743caa46c5b37fe5c422, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  wantsThisSideUp: 0
+  weight: 500
+  crushWeight: 20000
+  crushAmount: 0.67
 --- !u!1 &5438752056956746077
 GameObject:
   m_ObjectHideFlags: 0

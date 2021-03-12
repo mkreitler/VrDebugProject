@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: 4450832768517172622}
   - component: {fileID: 4450832768517172625}
   - component: {fileID: 4450832768517172626}
+  - component: {fileID: 1543883296683027209}
   m_Layer: 9
   m_Name: Crate
   m_TagString: Untagged
@@ -28,9 +29,9 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4450832768517172620}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.019066274, y: 0.51036197, z: -4.9697475}
-  m_LocalScale: {x: 0.5, y: 0.5, z: 0.5}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 0, y: 0, z: 0}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
@@ -127,3 +128,19 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!114 &1543883296683027209
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4450832768517172620}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0307ba91f065743caa46c5b37fe5c422, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  wantsThisSideUp: 0
+  weight: 50
+  crushWeight: 150
+  crushAmount: 0.67
